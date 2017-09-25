@@ -1,0 +1,17 @@
+@import "web_variables";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: $base-template-rows;
+  grid-template-columns: $base-template-columns;
+  grid-template-areas: $base-template-areas;
+}
