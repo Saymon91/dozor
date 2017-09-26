@@ -1,1 +1,17 @@
-*{padding:0;margin:0}body,html{height:100%}body{display:grid;grid-template-rows:2fr 1fr 10fr 1fr;grid-template-columns:1fr 6fr 1fr;grid-template-areas:"header header header" "nav-bar nav-bar nav-bar" "left-bar center-content right-bar" "footer footer footer"}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 2fr 1fr 10fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-areas: "header header header" "nav-bar nav-bar nav-bar" "left-bar center-content right-bar" "footer footer footer";
+}
+
