@@ -1,4 +1,4 @@
-@extends('web/base')
+@extends('base')
 
 @section('header')
 

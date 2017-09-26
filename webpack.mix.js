@@ -15,3 +15,4 @@ let mix = require('laravel-mix');
    .sass('resources/assets/sass/app.scss', 'public/css')*/
    mix.sass('resources/assets/sass/web.scss', 'public/css');
    mix.sass('resources/assets/sass/web-nav.scss', 'public/css');
+   mix.sass('resources/assets/sass/form.scss', 'public/css');

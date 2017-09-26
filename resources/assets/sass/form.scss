@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+
+}
+
+form .row {
+  height: 50px;
+  position: relative;
+  border-bottom: 1px solid #636b6f;
+  background: #EEEEEE;
+}
+
+form .row:last-child {
+  border-bottom: none;
+}
+
+form input {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-indent: 20px;
+  background: none;
+  border: none;
+}
+
+form input + label, form input:focus:placeholder-shown + label {
+  top: 5px;
+  height: 10px;
+  transition-duration: 0.5s;
+  display: block;
+  position: absolute;
+  width: 100%;
+  color: #8c8c8c;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+form input:placeholder-shown + label {
+  top: 20px;
+  height: 50px;
+  transition-duration: 0.5s;
+  font-size: 1em;
+  color: #2e3436;
+}
