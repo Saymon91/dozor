@@ -11,14 +11,14 @@
 |
 */
 
+Route::auth();
+
 Route::namespace('Web')->group(function () {
     Route::get('/', 'SiteController@index')->name('home');
     Route::get('/about', 'SiteController@about')->name('about');
     Route::get('/contacts', 'SiteController@contacts')->name('contacts');
     Route::get('/info', 'SiteController@info')->name('info');
 });
-
-Route::auth();
 
 /*
 Route::namespace('Auth')->group(function () {
