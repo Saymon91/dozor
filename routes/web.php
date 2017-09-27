@@ -11,8 +11,6 @@
 |
 */
 
-Route::auth();
-
 Route::namespace('Web')->group(function () {
     Route::get('/', 'SiteController@index')->name('home');
     Route::get('/about', 'SiteController@about')->name('about');
@@ -50,3 +48,5 @@ Route::group(['namespace' => 'Wiki', 'domain' => 'wiki.localhost'], function () 
     Route::get('/', 'WikiController@index')->name('wiki:home');
 });
 
+
+Auth::routes();
