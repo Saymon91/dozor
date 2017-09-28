@@ -1,9 +1,9 @@
-@extends('base')
+@extends('layouts.web')
 
 @section('center-content')
 
     @include('common.form', [
-    'csrf' => true,
+    'csrf' => false,
     'action' => 'http://localhost:8000/register',
     'rows' => [
         ['type' => 'email', 'name' => 'email', 'label' => __('registration.E-mail') ],

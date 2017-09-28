@@ -1,11 +1,8 @@
-@extends('base')
-
-@section('header')
-
-@endsection
+@extends('layouts.web')
 
 @section('nav-bar')@include('web/nav')@endsection
-
-@php
-    print_r($user)
-@endphp
+<pre>
+    @php
+        print_r($user)
+    @endphp
+</pre>

@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <header style="grid-area: header; background: #cccccc;">@section('header')@show</header>
+    <header style="grid-area: header; background: #cccccc;">@section('header')@include('web.header')@show</header>
     <nav style="grid-area: nav-bar; background: #8c8c8c;">@section('nav-bar')@show</nav>
     <div style="grid-area: left-bar; background: #8c8c8c;">@section('left-bar')@show</div>
     <main style="grid-area: center-content; background: #a4aaae;">@section('center-content')@show</main>
