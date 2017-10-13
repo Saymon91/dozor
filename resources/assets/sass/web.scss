@@ -1,4 +1,5 @@
 @import "web_variables";
+@import "web-header";
 
 * {
   padding: 0;
@@ -14,4 +15,7 @@ body {
   grid-template-rows: $base-template-rows;
   grid-template-columns: $base-template-columns;
   grid-template-areas: $base-template-areas;
+  background: var(--background-image) no-repeat;
+  background-size: cover;
+  background-origin: border-box;
 }

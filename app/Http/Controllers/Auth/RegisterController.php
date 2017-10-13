@@ -6,7 +6,7 @@ use App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Ramsey\Uuid\Uuid;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -63,15 +63,25 @@ class RegisterController extends Controller
 
     /**
      * Create a new user instance after a valid registration.
-     *
+     *Да. Но, что бы было,ч то отправлять
      * @param  array  $data
      * @return \App\Models\User
      */
     protected function create(array $data)
     {
         $data['password'] = bcrypt($data['password']);
-        $data['id'] = $data['id'] ?? Uuid::uuid4();
+        $data['id'] = $data['id'] ?? Uuid::generate();
         $data['info'] = $data['info'] ?? '{}';
         return User::create($data);
+    }
+
+    public function viewRegisterPage()
+    {
+
+    }
+
+    public function registration(Request $request)
+    {
+
     }
 }
